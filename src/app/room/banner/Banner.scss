@@ -1,0 +1,63 @@
+// .row {
+//     position: relative;
+//     left: unset;
+//     right: unset;
+//     width: unset;
+//     height: auto;
+//     top: unset;
+//     content: none;
+//     transform-style: unset;
+//     box-sizing: unset;
+// }
+
+div.row,.banner , .brandLogo, .brandName, .brandText, .brandMail   {
+    transform-style: unset !important;
+    perspective: unset !important;
+    position: relative !important;
+    text-align: center;
+    width: -webkit-fill-available;
+  
+    *,
+    *:before,
+    *:after,
+    &:after {
+      content: none !important;
+      position: relative !important;
+      left: unset !important;
+      top: unset !important;
+      box-sizing: unset !important;
+      transform-style: unset !important;
+      /* backface-visibility: hidden;*/
+    }
+  }
+
+  .banner {
+    margin: 200px auto;
+    background-color: white;
+    box-shadow: 1px 1px 3px #2d2d2d42;
+    padding: 25px;
+    height: unset;
+    text-align: center;
+    .brandLogo {
+        text-align: center;
+        // margin-top: 20px;
+        img{
+            width: 75px;
+            vertical-align: middle;
+            margin: auto;
+            // margin-top: 80px;
+        }
+    }
+    .brandName {
+        margin: 15px;
+    }
+    .brandText {
+        p {
+            font-size: 1.25em;
+        }
+
+    }
+    @media (max-width: 400px) {
+        // margin: 75px auto;
+    }
+  }
